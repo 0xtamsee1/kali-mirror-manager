@@ -124,7 +124,7 @@ def ping():
         t = threading.Thread(target=ping_thread, args=(i, repo))
         threads.append(t)
         t.start()
-    
+
     for t in threads:
         t.join()
     pingDisplay()
@@ -194,7 +194,7 @@ def menu():
 command = []
 if os.getuid()!=0:
     print()
-    subprocess.call(['sudo', 'python' ] + sys.argv)
+    subprocess.call(['sudo'] + sys.argv, stderr=subprocess.DEVNULL)
 else:
     pass
 
@@ -203,7 +203,7 @@ print("""
     +-+-+-+-+ +-+-+-+-+-+-+ +-+-+-+-+-+-+-+
     |K|A|L|I| |M|I|R|R|O|R| |M|A|N|A|G|E|R|
     +-+-+-+-+ +-+-+-+-+-+-+ +-+-+-+-+-+-+-+
-    https://github.com/0xtamsee1/kali-mirror-manager                                                     
+    https://github.com/0xtamsee1/kali-mirror-manager
 """)
 
 #COMMANDS
