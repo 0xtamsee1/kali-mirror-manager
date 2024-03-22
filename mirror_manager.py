@@ -112,7 +112,7 @@ def pingDisplay():
         if v == 'R':
             print(("|    "+ k + '\t' + "    |    " + v + "\t|").expandtabs(60))
         else:
-            print(("|    "+ k + '\t' + "    |    " + str(v) + "ms\t|" ).expandtabs(60))
+            print(("|    "+ k + '\t' + "    |    " + str(v) + " ms\t|" ).expandtabs(60))
     print ("+---------------------------------------------------------------+-------------------------------------------------------+")
     print()
     print("[+] Request Timed Out ? Try ping again")
