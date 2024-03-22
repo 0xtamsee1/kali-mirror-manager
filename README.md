@@ -1,6 +1,6 @@
 # Kali Mirror Manager
 
-Kali Mirror Manager is a Python command-line tool designed to manage mirrors for the Kali Linux distribution. It allows users to ping mirrors to measure latency, and set a new mirror for package updates.
+Python command-line tool designed on a threaded model to manage mirrors for the Kali Linux distribution. It allows users to measure latency, and set a new mirror for package updates.
 
 ## Installation
 
@@ -14,7 +14,7 @@ Kali Mirror Manager is a Python command-line tool designed to manage mirrors for
    ```
 3. Run the script:
    ```bash
-   python3 mirror_manager.py
+   python mirror_manager.py
    ```
 ## Usage
 
