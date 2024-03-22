@@ -106,7 +106,7 @@ def check():
 # PING MIRRORS
 def pingDisplay():
     print("+---------------------------------------------------------------+-------------------------------------------------------+")
-    print(("|    MIRRORS" + '\t' + "    |    LATENCY                                  |").expandtabs(60))
+    print(("|    MIRRORS" + '\t' + "    |    LATENCY                                            |").expandtabs(60))
     print("+---------------------------------------------------------------+-------------------------------------------------------+")
     for k, v in sorted(mirrors.items(), key=itemgetter(1)):
         if v == 'R':
