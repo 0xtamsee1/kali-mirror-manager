@@ -86,7 +86,6 @@ def check():
     backUp()
     content = []
     file = open("/etc/apt/sources.list", "r+")
-    print("[+] Commenting current mirror in sources.list")
     for line in file.readline():
         if re.search ('^deb http://http.kali.org/kali', line, re.I) or re.search('^deb-src http://http.kali.org/kali', line, re.I):
             newline = "#" + line
@@ -145,7 +144,7 @@ def ping_thread(i, repo):
         sys.stdout.write("[+] Thread executing : {0}\r".format(i+1))
         sys.stdout.flush()
     except subprocess.CalledProcessError:
-        mirrors[repo] = "[-] Request Timed Out"
+        mirrors[repo] = "Request Timed Out"
         sys.stdout.write("[+] Thread executing : {0}\r".format(i+1))
         sys.stdout.flush()
 
@@ -193,8 +192,8 @@ def menu():
 #MAIN
 command = []
 if os.getuid()!=0:
-    print()
-    subprocess.call(['sudo'] + sys.argv, stderr=subprocess.DEVNULL)
+    print("[-] Permission denied")
+    sys.exit()
 else:
     pass
 
@@ -227,4 +226,4 @@ while True:
             set(command[1])
     elif command[0] == "exit":
         break
-sys. exit()
+sys.exit()
