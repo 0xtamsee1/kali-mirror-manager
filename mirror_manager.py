@@ -176,8 +176,8 @@ def set(repo):
 
 #MENU
 def menu():
+    print("    Python command-line tool designed to manage mirrors for a Kali Linux distribution.")
     print()
-    print("Python command-line tool designed to manage mirrors for a Kali Linux distribution.")
     print(("    COMMANDS" + '\t' + "DESCRIPTION").expandtabs(30))
     print()
     for key, value in choices.items():
@@ -209,7 +209,6 @@ print("""
 ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝    ╚═╝     ╚═╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝                                                                                                                                    
 https://github.com/0xtamsee1/kali-mirror-manager                                                     
 """)
-print()
 
 #COMMANDS
 menu()
