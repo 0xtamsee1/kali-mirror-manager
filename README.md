@@ -14,7 +14,7 @@ Python command-line tool designed on a threaded model to manage mirrors for the 
    ```
 3. Run the script:
    ```bash
-   python mirror_manager.py
+   sudo python kali-mirror-manager.py
    ```
 ## Usage
 
